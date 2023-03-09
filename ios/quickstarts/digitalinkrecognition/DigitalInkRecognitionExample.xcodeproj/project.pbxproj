@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06B702967D07DFBE8B611A65 /* Pods_DigitalInkRecognitionExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C581A52410A68C001DDCD7 /* Pods_DigitalInkRecognitionExample.framework */; };
+		09C6436129B7C65D00F6F8C0 /* SyntaxHighlighterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6436029B7C65D00F6F8C0 /* SyntaxHighlighterViewController.swift */; };
 		4316679E23E3C9B600320D07 /* StrokeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4316679D23E3C9B500320D07 /* StrokeManager.m */; };
 		431667A123E79EC200320D07 /* RecognizedInk.m in Sources */ = {isa = PBXBuildFile; fileRef = 431667A023E79EC200320D07 /* RecognizedInk.m */; };
 		437C575823ECB138007755CF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437C575723ECB138007755CF /* SceneDelegate.m */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09C6436029B7C65D00F6F8C0 /* SyntaxHighlighterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxHighlighterViewController.swift; sourceTree = "<group>"; };
 		22A22BB43CB8C0FDB75229DD /* Pods_DigitalInkRecognitionExampleObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigitalInkRecognitionExampleObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA139D9122F19DE977BD81B /* Pods-DigitalInkRecognitionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalInkRecognitionExample.debug.xcconfig"; path = "Target Support Files/Pods-DigitalInkRecognitionExample/Pods-DigitalInkRecognitionExample.debug.xcconfig"; sourceTree = "<group>"; };
 		4316679D23E3C9B500320D07 /* StrokeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrokeManager.m; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				43941DD52491F2AE0003EF8E /* AppDelegate.swift */,
 				43941DD72491F2AE0003EF8E /* SceneDelegate.swift */,
 				43941DD92491F2AE0003EF8E /* ViewController.swift */,
+				09C6436029B7C65D00F6F8C0 /* SyntaxHighlighterViewController.swift */,
 				43941DEB2491FF520003EF8E /* RecognizedInk.swift */,
 				43941DED2491FF660003EF8E /* StrokeManager.swift */,
 			);
@@ -405,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43941DDA2491F2AE0003EF8E /* ViewController.swift in Sources */,
+				09C6436129B7C65D00F6F8C0 /* SyntaxHighlighterViewController.swift in Sources */,
 				43941DD62491F2AE0003EF8E /* AppDelegate.swift in Sources */,
 				43941DEE2491FF660003EF8E /* StrokeManager.swift in Sources */,
 				43941DEC2491FF520003EF8E /* RecognizedInk.swift in Sources */,
@@ -454,15 +458,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 48M3H3QSX7;
 				INFOPLIST_FILE = DigitalInkRecognitionExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.DigitalInkRecognitionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.DigitalInExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -480,15 +484,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 48M3H3QSX7;
 				INFOPLIST_FILE = DigitalInkRecognitionExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "-D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.DigitalInkRecognitionExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.DigitalInExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -535,6 +539,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -549,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -594,6 +599,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -602,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -621,7 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DigitalInkRecognitionExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DigitalInkRecognitionExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
